@@ -1,0 +1,328 @@
+
+1. The value of correlation coefficient will always be: 
+ANS:  between -1 and 1
+
+
+2. Which of the following cannot be used for dimensionality reduction?
+ANS: C) Recursive feature elimination
+
+
+3. Which of the following is not a kernel in Support Vector Machines?:
+ANS :  hyperplane
+
+
+
+4. Amongst the following, which one is least suitable for a dataset having non-linear decision boundaries?
+ANS:  Support Vector Classifier
+
+
+
+
+5. In a Linear Regression problem, ‘X’ is independent variable and ‘Y’ is dependent variable, where ‘X’ represents weight in pounds. If you convert the unit of ‘X’ to kilograms, then new coefficient of ‘X’ will be?
+ANS: B) same as old coefficient of ‘X’
+
+
+
+
+6. As we increase the number of estimators in ADABOOST Classifier, what happens to the accuracy of the model?
+
+ANS: increases(Note : Depend on data)
+  
+
+7 Which of the following is not an advantage of using random forest instead of decision trees?
+
+ANS: B) Random Forests explains more variance in data then decision trees
+
+
+8. Which of the following are correct about Principal Components?
+
+ANS:  B) Principal Components are calculated using unsupervised learning techniques
+      C) Principal Components are linear combinations of Linear Variables.
+
+
+9. Which of the following are applications of clustering?
+ANS:  A) Identifying developed, developing and under-developed countries on the basis of factors like GDP, poverty index, employment rate, 
+population and living index
+   
+
+10. Which of the following is(are) hyper parameters of a decision tree?
+ANS :      A) max_depth B) max_features
+           C) n_estimators D) min_samples_leaf
+
+
+
+Q11. What are outliers? Explain the Inter Quartile Range(IQR) method for outlier detection.
+
+ outliers: Suppose I have a dataset and In that particular dataset I have some data point  and some of the records are significant difference form 
+other records itself
+
+
+
+So, that particular observation deviates so much from other observation which can arise suspicion that is the outliers
+
+There are 
+two different techniques 
+
+1) z-score
+2) Inter Quantile Range(IQR)
+
+In inter quantile range, some steps are involved what we do is that we should need to 
+know what is percentiles before the standing out IQR
+ 
+ Suposs I have some value lik
+[9,4,3,7,1,5,2,10,6,8]
+
+To find out the percentile what we do is the 
+first of all shorting mechanism will happen on this number. So its become
+[1,2,3,4,5,6,7,8,9,10]
+
+After shorting what we do is that suppose if I consider 1,
+ this one is nothing but my zero percentile of number that is lesser than 1 because there is
+no number before the 1.
+
+Suppose if I consider 2, Since I've 
+10 numbers over here, 2 have become my 10 percentile number. That means that the 10th percentile of my total number over
+here. In this particular distribution 
+are less than 2 and 10 percent of this number only one.
+I have only one number which is less than 2.which is nothing but from this total 10 numbers, it is 
+10 percent.
+
+I have considered 3 over here. That means 20 percent of this number in this distribution is greater than 3
+
+In IQR most of the number that will be
+ focusing on will be 25% and 75% and then we calculate the 75% value in this distribution with subtracted with 25% and that is basically
+my IQR
+
+
+IQR= 75% - 25%
+
+ 
+That means 75 percentile number whatever I get and if I subtract with 25 percentile number hat is my IQR
+
+
+
+12. What is the primary difference between bagging and boosting algorithms?
+
+Bagging technique can be an effective approach to reduce the variance of a model, to prevent over-fitting and to increase the accuracy of unstable models.
+
+On the other hand, Boosting enables us to implement a strong model by combining a number of weak models together.
+
+In contrast to bagging, samples drawn from the training dataset are not replaced back into the training set during the boosting exercise.
+
+If you analyse the decision boundaries, known as stumps, that are computed by the Adaptive Boosting algorithm when compared with the Decision trees, you will note that the decision boundaries computed by AdaBoost can be very sophisticated.
+
+Although this can help us implement a strong predictive model, the ensemble learning increases the computational complexity compared to individual classifiers.
+
+
+13. What is adjusted R2 in logistic regression. How is it calculated?
+
+In many Supervised machine learning problem statement, we have two kinds of use cases we usually get, one is Classification kind of use case and 
+other 
+is Regression kind of use case.
+In the case of Classification kind of use case, Whenever we need to check accuracy usually follow technique terms like 
+Confusion matrix. We need to check 
+the accuracy score, we need to check F1, we need to check the true positive rate, recall, precision.
+
+But in the case 
+of Regression, there is slite different way of checking an accuracy score those techniques are called R Square and Adjacent R Square.
+
+Linear Regression 
+Equation is nothing but
+
+ 
+y= B0+B1x1(Simple Linear regression)
+ 
+
+y= B0+B1x1 + B0+B1x1(Multiple )
+
+
+Remember one thing as we go and adding more and more independent features, our R Square value will increases.
+Questions arise about why R square value will 
+increase. The linear Regression, that I'm adding more independent features what it does that it tries to apply a coefficient value. Suppose I apply another 
+feature like B3x3 and this B3 is my new coefficient, Now what this linear Regression algorithm will do, It will try to assign
+B3 value such that our SSres value will decrease. As we know that SSres value will decrease, the 
+division of SSres and SStotal will also decrease. When this decreases that means 1- any small number will it will make R Square value increase.
+It will happen 
+when you go and add mode independent feature but you should understand that R square as we go and adding more new feature this R Square will 
+never-Never decrease.
+
+Now the main thing is that even though adding some independent feature it may happen is that this particular independent feature may not be correlated with the 
+target output but even though we are adding independent feature and R-Square value will be increasing, that indicate that R-Square value does not do anything, 
+it just thinks that if new independent feature getting adding, R-Square value will increase. So it not Penilaizing the new Added features.
+So for that, we usually 
+use A Adjacent R-Square.
+One thing that understands as we go and add more features its good. I have more features, my R-Square values will also increase but is 
+always a scenario
+is that the linear Regresson will make sure that the R -Square value will increase because the independent features increase. The SSres value 
+tries to assign a coefficient in such a way that the SSres values will be decreasing.
+Now it needs to understand that how it penalizes when more and more features 
+are used for the purpose we used adjusted Square.
+
+Formula fo adjusted R Square
+ R2 adjusted = 1-(1-R2)(N-1)/N-P-1
+
+
+Where  R2 = Sample R2
+
+       P= Number of Predictor
+       N=  total sample size 
+
+It Penalizes the attributes that are not correlated.
+ As we go and add the number of features what happened is that? We are subtracting with a sample size that is my (N-P-1).
+
+As I go and increase the value of P then N-P-1 become a small number because I am subtracting this.when this becomes a smaller number then what happened is that, What we 
+are trying to do over here? 
+When we are trying to divide the (N-1) with this particular value (N-P-1) than (N-1) become a bigger value and then we multiply with the (1-R2) again it becomes
+a bigger number itself.
+But when it subtract with the 1, Since this is a bigger number (n-1). This whole subtraction will make sure that the R2 value will decrease. Only when we trying to
+use more predictor, more independent features and it will try to find out those features which are not correlated with the output features.
+
+So what is does is that? It tries to subtract with the N value which is my sample size include my output features and it
+ will just be reduced that means the whole value will increase. that is (1-R2)(N-1)/N-P-1.
+
+When this whole value increases we know that the 1- bigger number which 
+gives you a smaller number.
+whenever my attributes get increases my adjusted R2 will decrease. It will decrease in that manner when my added features are not 
+correlated. when they are not correlated
+only at the time, it decreases my r2 values otherwise this particular attributes that are my P is correlated then what will 
+happen is that mt R2 values will 
+increase and become a higher number then 1 -this higher value(i.e R2) becomes a smaller number
+The whole part (N-1)/N-P-1 of that 
+formula overwhelmed  that means the whole part  of this calculation is not necessary because R2 is quite a smaller number,
+anything multiplies by  with the smaller 
+number will be a smaller number
+
+
+
+
+14. What is the difference between standardisation and normalisation?
+
+ANS:  Standardisation:  Column Standardisation is more often used in pratice because it has nice relationship with Gaussain distribution.
+       It convert raw data it could be any thing li
+ke KG, Inches, it does not care. It transform all the data and ensure that mean of standardised data is zero(0)
+and std-dev is one.
+It will moving the mean vector to origin(0,0) and it might be squashing the data point if std-dev is greater than one(std dev>1) and it will expending the point
+if the std-dev is less than zero,So, as my std-dev is one at every axis so this is called mencentring followed by scaling
+
+
+
+Normalisation: Through the col normalisation it conver a feature in such a way so thses value lies between 0 or 1[0,1]. It creat a bounding boxnad it
+ will bringgig all the data point within the reason. It wii sqashing all the data point without spoling the realationship between the data
+ point and bringging into the square this is called a unit squar  because it square both side. In column normalisaion does it all the data point
+lies any where in n- dim space so column normalisation takes the data and out all all of data in unit-hyper-Cube in n- dim-space.It basically compressing
+or it basically squashing all of the into unit-Cube
+
+
+
+
+15. What is cross-validation? Describe one advantage and one disadvantage of using cross-validation.
+
+  We know the pipeline of machine learning. Some of the pipelines are data gathering, feature Engreening, feature selection, model creation, model deployment.
+
+Always remember that before the model creation what we do is that.
+Whenever we a dataset, Suppose in a dataset I have 1000 records. We usually perform a Train-Test
+ Split, saying that In my training set I have 70% data and
+In my test set, I have 30% of data its depend on the counts of the data point.
+In this case, I have 1000 
+records, I'm taking a 70% and 30% just for the example. when we do a train test split my model is used a 70%   
+ the training dataset for the training that 
+particular model itself. Once our model has got trained we used the remaining 30% to check the accuracy.
+Now when we check the accuracy of the model than the 
+model says that it is 85% accurate, it's 90% accurate.
+
+Now what happened is that
+When we do a Train-test split the main thing need to understand that from the 
+datapoint, from this particular 1000 datapoint 70% is randomly selected and this 30%
+is also randomly selected. Mow this kind of random selection has happened
+
+ Suppose some kind of dataset present at 30% and this kind o dataset not present in 70%. Then what we do is that? then accuracy will go down. we know that whenever
+ we do a Train-Test split we usually us a random sate variable. 
+Based on the random state what is that? It randomly selected a data point. now suppose I am selected
+ a random states zero when I selected a random state is zero
+ and I say that do 70% and 30% split and we take it and suppose its accuracy is some way around 85%.
+Now 
+again I've selected a random state and this time my random state is 50 and do the trian-test split and when I do this its again shuffle and I got an accuracy
+ 
+some way around 90%
+So the main thing to understand if I go and select a different-different random state than my accuracy gets fluctuate. To prevent this we 
+have a concept called a 
+Cross-validation(CV)
+ There are different type of cross-validation but I explain regarding K-Fold Cross-validation
+
+K-Fold Cross Validation:
+ 
+Suppose I have 1000 records. Now I have to select a K-values, this k value is 5(K=5). This K means 5 experiments.
+ For each experiment based on the K value what 
+should be the test data
+
+when I dived the data the dataset 1000/5=200 will be my Test data. In my first experiment, the first 200 records will be test records, and 
+the remaining will be train data
+in my first experiment. Then the model will get the train on this 800  records and then its will test on  200 datasets and we will
+ get our accuracy as 1
+
+In 2nd experiment what will happen? the next 20 records will be my test data and the remaining 600 and 200 will be training data, after 
+the model creation  it will
+ give my accuracy 2.
+And this will continue unless and until my whole iteration will complete
+and finally we get the accuracy 1, 
+accuracy2 and accuarcy2, and the same accuarcy4 and accuracy 5. What will be doing is that. We will find out the mean of this accuracy.
+
+Advantages of 
+Cross-Validation
+
+1. Reduces Overfitting: In Cross-Validation, we split the dataset into multiple folds and train the algorithm on different folds. This 
+prevents our model from overfitting the training dataset. So, in this way, the model attains the generalization capabilities which is a good sign of a 
+robust algorithm.
+
+Note: Chances of overfitting are less if the dataset is large. So, Cross-Validation may not be required at all in the situation where 
+we have sufficient data available.
+
+2. Hyperparameter Tuning: Cross-Validation helps in finding the optimal value of hyperparameters to increase the efficiency
+ of the algorithm.
+
+
+Disadvantages of Cross-Validation
+
+1. Increases Training Time: Cross-Validation drastically increases the training time. Earlier you had to 
+train your model only on one training set, but with Cross-Validation, you have to train your model on multiple training sets. 
+
+For example, if you go with 
+5 Fold Cross-Validation, you need to do 5 rounds of training each on different 4/5 of available data. And this is for only one choice of hyperparameters.
+ If you have multiple choice of parameters, then the training period will shoot too high.
+
+2. Needs Expensive Computation: Cross-Validation is computationally
+ very expensive in terms of processing power required.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
