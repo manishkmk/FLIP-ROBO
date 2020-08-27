@@ -1,0 +1,76 @@
+1.Which of the following extracts information from user generated content?
+
+ANS:  B) Web scraping 
+
+2.Which of the following is not a web scraping library in python?
+ANs C) scrapy
+
+3.Selenium tests __________?
+ANS: A) Browser based applications
+
+	
+4.Task of crawling is performed by a complex software which is known as:
+ANS: C) Boat	
+
+
+5.Which of the following commands is used to access name of a tag in Beautiful Soup?
+ANS:  B) tag.name
+
+6.Which of the following is the default parser in Beautiful Soup?
+Ans: C) lxml	
+
+7.	In selenium the webdriver is used to?
+ANS    D) to download any content from a webpage
+
+
+8.	In selenium, driver.find_elements_by_xpath(‘given xpath’) returns:
+
+ANS B) the url of first webelement associated with the ‘given xpath’
+
+9.	The script ‘window.scrollBy(0,a) scrolls the webpage by?
+ANS D) ‘a’ number of pixels vertically
+
+
+10.	Which of the following is(are) tags of HTML?.
+ANS:   A) <a>	
+
+
+11.What is the main difference between a web scraper and a web crawler?
+
+ANWeb scraping, to use a minimal definition, is the process of processing a web document 
+and extracting information out of it. You can do web scraping without doing web crawling.
+
+Web crawling, to use a minimal definition, is the process of iteratively finding and fetching 
+web links starting from a list of seed URL's. Strictly speaking, to do web crawling, you have 
+to do some degree of web scraping (to extract the URL's.)
+
+
+
+12.	What is ‘robots.txt’ file? What is the use of ‘robots.txt’ file?
+A robots.txt file is a simple text file which webmasters can create to tell web crawlers which
+ parts of a website should be crawled and which should not. The file is stored in the main directory (root)
+ on the server. When a crawler arrives at a website, it first reads the robots.txt file to determine which parts 
+of the website it should crawl and which parts it should ignore, according to the so-called Robots Exclusion 
+Standard Protocol. You don’t have to create a robots.txt file but it’s often advisable to do so.
+With a robots.txt file, it’s possible to exclude entire directories from crawls. If necessary, you can even 
+block bots from an entire domain.
+
+Your Robots.txt file is a means to speak directly to search engine bots, giving them clear directives about which 
+parts of your site you want crawled (or not crawled).
+
+
+
+
+13.What are static and dynamic web pages?
+
+In static web pages, Pages will remain same until someone changes it manually.
+Static Web Pages are simple in terms of complexity.In static web pages, Information are change rarely.
+Static Web Page takes less time for loading than dynamic web page.In Static Web Pages, database is not used.
+Static web pages are written in languages such as: HTML, JavaScript, CSS, etc
+Static web pages does not contain any application program.Static web pages require less work and cost in designing them.
+
+In dynamic web pages, Content of pages are different for different visitors.Dynamic web pages are complicated.
+In dynamic web page, Information are change frequently.Dynamic web page takes more time for loading.
+In dynamic web pages, database is used.Dynamic web pages are written in languages such as: CGI, AJAX, ASP, ASP.NET, etc.
+Dynamic web pages contains application program for different services.Dynamic web pages require comparatively more work and cost in designing them.
+
