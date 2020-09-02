@@ -1,0 +1,134 @@
+1. Which of the following can approximate any function universally (i.e. universal approximators)?
+
+ANS: B) Neural Networks
+
+2. In which of the following domains we cannot use neural networks?
+
+C) Fraud Detection
+
+3. Rearrange the following steps of a gradient descent algorithm in correct order of their occurrence?
+
+ANS: C) i – v – iv – iii – ii
+
+4. What is the full form of RNN?
+A) Recurrent Neural Network
+
+
+
+
+5. What is plasticity in neural networks?
+a) input pattern keeps on changing
+
+
+6. What is stability plasticity dilemma?
+c) dynamic inputs & categorization can’t be handled
+
+
+7. B) Statement 2 is true while statement 1 is false
+
+
+8. Which of the following architecture has feedback connections?
+ANS: A) Recurrent Neural network
+
+
+
+
+9. In training a neural network, you notice that the loss does not decrease in the few starting epochs. The reason behind it could be
+ANS: The reasons for this could be:
+
+The learning is rate is low
+Regularization parameter is high
+Stuck at local minima
+
+10. Which of the following function(s) can be used to impart non – linearity in a neural network?
+ANS: B) Rectified Linear Unit
+     D) Sigmoid Function
+
+
+
+11. What is Deep Learning?
+
+Deep learning is a class of machine learning algorithms that[11](pp199–200) uses multiple layers to
+ progressively extract higher level features from the raw input. For example, in image processing, 
+lower layers may identify edges, while higher layers may identify the concepts relevant to a human 
+such as digits or letters or faces.
+
+
+12. What is reinforcement learning?
+Reinforcement learning is an area of Machine Learning. It is about taking suitable action to maximize
+ reward in a particular situation. It is employed by various software and machines to find the best 
+possible behavior or path it should take in a specific situation. Reinforcement learning differs from 
+the supervised learning in a way that in supervised learning the training data has the answer key with 
+it so the model is trained with the correct answer itself whereas in reinforcement learning, there is no a
+nswer but the reinforcement agent decides what to do to perform the given task. In the absence of a training 
+dataset, it is bound to learn from its experience.
+
+
+13. What Are the Differences Between Machine Learning and Deep Learning?
+ans:  Machine Learning: Instead of engineers “teaching” or programming computers to have what they need
+to carry out tasks, that perhaps computers could teach themselves – learn something without being
+explicitly programmed to do so. ML is a form of AI where based on more data, and they can change
+actions and response, which will make more efficient, adaptable and scalable. e.g., navigation apps and
+recommendation engines. Classified into:-
+1. Supervised
+2. Unsupervised
+3. Reinforcement learning
+
+
+Deep Learning: It is a technique for implementing ML.
+ML provides the desired output from a given input, but DL reads the input and applies it to another data.
+In ML, we can easily classify the flower based upon the features. Suppose you want a machine to look at
+an image and determine what it represents to the human eye, whether a face, flower, landscape, truck,
+building, etc.
+Machine learning is not sufficient for this task because machine learning can only produce an output from
+a data set – whether according to a known algorithm or based on the inherent structure of the data. You
+might be able to use machine learning to determine whether an image was of an “X” – a flower, say – and
+it would learn and get more accurate. But that output is binary (yes/no) and is dependent on the
+algorithm, not the data. In the image recognition case, the outcome is not binary and not dependent on
+the algorithm.
+The neural network performs MICRO calculations with computational on many layers. Neural networks
+also support weighting data for ‘confidence. These results in a probabilistic system, vs. deterministic, and
+can handle tasks that we think of as requiring more ‘human-like’ judgment.
+
+14. What is a perceptron?
+In machine learning, the perceptron is an algorithm for supervised learning of binary classifiers. 
+A binary classifier is a function which can decide whether or not an input, represented by a vector 
+of numbers, belongs to some specific class.[1] It is a type of linear classifier, i.e. a classification
+ algorithm that makes its predictions based on a linear predictor function combining a set of weights 
+with the feature vector.
+
+
+
+
+
+15. What’s the difference between AI and ML?
+ANS:  Machine learning  is a branch of artificial intelligence ans is
+Machine learning is the study of computer algorithms that allow computer 
+programs to automatically improve through experience.
+
+ML is one of the ways we expect to achieve AI. Machine learning relies on working 
+with small to large datasets by examining and comparing the data to find common 
+patterns and explore nuances.
+
+
+supervised learning,” where supervised learning algorithms try to model relationship
+ and dependencies between the target prediction output and the input features, such 
+that we can predict the output values for new data based on those relationships, 
+which it has learned from previous datasets  fed.
+
+Unsupervised learning, another type of machine learning are the family of machine 
+learning algorithms, which have main uses in pattern detection and descriptive modeling.
+ These algorithms do not have output categories or labels on the data (the model trains 
+with unlabeled data).	
+
+
+Artificial intelligence is the science and engineering of making computers behave in ways 
+that, until recently, we thought required human intelligence.
+
+The word Artificial Intelligence comprises of two words “Artificial” and “Intelligence”. 
+Artificial refers to something which is made by human or non natural thing and Intelligence
+ means ability to understand or think. There is a misconception that Artificial Intelligence 
+is a system, but it is not a system .AI is implemented in the system. There can be so many 
+definition of AI, one definition can be “It is the study of how to train the computers so that 
+computers can do things which at present human can do better.”Therefore It is a intelligence where
+ we want to add all the capabilities to machine that human contain.	
